@@ -20,7 +20,7 @@ export const services = [
 ];**/
 
 
-export const aboutContent = [
+/*export const aboutContent = [
   {
     title: "Mission",
     text: "To deliver excellence in shipping management through high-quality, integrated offshore and onshore logistics tailored to the unique requirements of our global clientele." // [cite: 9]
@@ -29,7 +29,7 @@ export const aboutContent = [
     title: "Vision",
     text: "To be the industry leader in safe, cost-efficient maritime services." // [cite: 11]
   }
-];
+];*/
 
 
 
