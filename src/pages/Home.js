@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { companyData } from '../data';
-import { aboutContent, services } from '../data';
+import { aboutContent, services_h } from '../data';
 
 const Home = () => {
   return (
@@ -56,14 +56,17 @@ const Home = () => {
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      {services.map((service, index) => (
-        <div key={index} className="p-8 border border-gray-100 rounded-xl bg-gray-50 hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
-          <div className="text-4xl mb-6">{service.icon}</div>
-          <h3 className="text-xl font-bold text-tssglBlue mb-4">{service.title}</h3>
+      {services_h.map((service1, index) => (
+        <Link to="/services" key={index} className="p-8 border border-gray-100 rounded-xl bg-gray-50 hover:bg-white hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+          <div className="text-4xl mb-6">{service1.icon}</div>
+          <h3 className="text-xl font-bold text-tssglBlue mb-4">{service1.title}</h3>
           <p className="text-gray-600 leading-relaxed text-sm">
-            {service.description}
+            {service1.description}
           </p>
-        </div>
+          <span className="text-tssglBlue font-bold text-xs uppercase tracking-widest group-hover:text-tssglYellow transition-colors">
+            Read More →
+          </span>
+        </Link>
       ))}
     </div>
   </div>

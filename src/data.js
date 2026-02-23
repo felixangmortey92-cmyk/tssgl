@@ -8,16 +8,17 @@ export const companyData = {
     email: "ops@tssgl.com",
     phone: "+233 (0) 538 584 722",
     ops247: "+233 (0) 538 584 722",
-    location: "P.O. Box TM, Community 1, Tema Port Area"
+    location: "P.O. Box TM, Community 2, Tema Port Area"
   }
 };
 
-/**COMPANY SERVICES
-export const services = [
-  { title: "Shipping Agency", icon: "🚢" },
-  { title: "Offshore Support", icon: "🌊" },
-  { title: "Logistics & Clearing", icon: "📦" }
-];**/
+//COMPANY SERVICES///
+export const services_h = [
+  { title: "Shipping Agency", icon: "🚢" , description: "Full attendance to vessels in all Ghanaian ports, handling port clearances, pilotage, and berthing coordination." },
+  { title: "Offshore Support", icon: "🌊" , description: "Specialized offshore support services including provisioning, direct delivery, and boat transportation." },
+  { title: "Logistics & Clearing", icon: "📦" , description: "Comprehensive logistics solutions for efficient cargo handling and supply chain management." },
+  { title: "Chandlery", icon: "🛒" , description: "Comprehensive chandlery services providing high-quality supplies and equipment for vessels operating in the Gulf of Guinea." }
+];
 
 
 /*export const aboutContent = [
@@ -36,7 +37,8 @@ export const services = [
 
 export const services = [
   {
-    category: "Ships Agency", // [cite: 20]
+    title: "Ships Agency", // [cite: 20]
+    //image: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=800",
     description: "Full attendance to vessels in all Ghanaian ports, handling port clearances, pilotage, and berthing coordination.", // [cite: 21]
     icon: "🚢",
     items: [
@@ -47,7 +49,7 @@ export const services = [
     ]
   },
   {
-    category: "Logistics & Cargo", // [cite: 25]
+    title: "Logistics & Cargo", // [cite: 25]
     description: "Comprehensive logistics solutions for efficient cargo handling and supply chain management.", // [cite: 26]
     icon: "📦",
     items: [
@@ -57,13 +59,24 @@ export const services = [
     ]
   },
   {
-    category: "Offshore & Chandling", // [cite: 28]
+    title: "Offshore & Chandling", // [cite: 28]
+    //image: "https://images.unsplash.com/photo-1516216628859-9bccecab13ca?q=80&w=800",
     description: "Specialized offshore support services including provisioning, direct delivery, and boat transportation.", // [cite: 29-31]
     icon: "🌊",
     items: [
       "Provisioning (Stores, spares, dry & fresh provisions and fresh water)", // [cite: 29]
       "Direct Delivery to port and anchorage", // [cite: 30]
       "Boat Transportation (Anchorage and OPL)" // [cite: 31]
+    ]
+  },
+  {
+    title: "Chandlery", // [cite: 32]
+    description: "Comprehensive chandlery services providing high-quality supplies and equipment for vessels operating in the Gulf of Guinea.", // [cite: 33]
+    icon: "🛒" ,
+    items: [
+      "Provisioning (Stores, spares, dry & fresh provisions and fresh water)", // [cite: 33]
+      "Direct Delivery to port and anchorage", // [cite: 33]
+      "Boat Transportation (Anchorage and OPL)" // [cite: 33]
     ]
   }
 ];
@@ -78,6 +91,7 @@ export const services = [
 export const fleetData = [
   {
     name: "M/V THUNDER",
+    image: "https://images.unsplash.com/photo-1544449553-9a4a50b77543?q=80&w=1200", // Fast Crew Vessel vibe
     type: "Fast Crew Supplier / Utility Vessel",
     status: "Active",
     specs: {
